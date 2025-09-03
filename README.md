@@ -1,4 +1,4 @@
-#Job Application Assistant - Chrome Extension
+# Job Application Assistant - Chrome Extension
 Overview
 Job Application Assistant is a comprehensive Chrome extension designed to streamline the job application process. It helps job seekers automatically apply for positions, optimize their resumes for Applicant Tracking Systems (ATS), generate tailored cover letters, and discover relevant job opportunities.
 

@@ -1,0 +1,108 @@
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 12px;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #4a6fa5;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.spinner-small {
+  width: 20px;
+  height: 20px;
+}
+
+.spinner-small .spinner {
+  width: 20px;
+  height: 20px;
+  border-width: 2px;
+}
+
+.spinner-medium {
+  width: 40px;
+  height: 40px;
+}
+
+.spinner-medium .spinner {
+  width: 40px;
+  height: 40px;
+  border-width: 3px;
+}
+
+.spinner-large {
+  width: 60px;
+  height: 60px;
+}
+
+.spinner-large .spinner {
+  width: 60px;
+  height: 60px;
+  border-width: 4px;
+}
+
+.loading-text {
+  color: #6c757d;
+  margin: 0;
+  text-align: center;
+}
+
+.text-small {
+  font-size: 12px;
+}
+
+.text-medium {
+  font-size: 14px;
+}
+
+.text-large {
+  font-size: 16px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  flex-direction: column;
+}
+
+.loading-inline {
+  display: inline-flex;
+  flex-direction: row;
+  padding: 8px;
+  gap: 8px;
+}
+
+.loading-inline .spinner {
+  width: 16px;
+  height: 16px;
+  border-width: 2px;
+}
+
+.loading-inline .loading-text {
+  font-size: 13px;
+}
